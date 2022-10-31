@@ -2,7 +2,7 @@
 
 using namespace std;
 struct Point{
-    int val; // class cua point
+    int val; 
     double x, y;
     double distance;
 };
