@@ -38,7 +38,7 @@ int KNN(Point arr[], int n, int k, Point p){
 }
 
 int main() {
-    int n = 1;
+    int n = 16;
     Point arr[n];
 
     arr[0].x = 1;
