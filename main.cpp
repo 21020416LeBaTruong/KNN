@@ -8,12 +8,12 @@ struct Point{
 };
 
 int KNN(Point arr[], int n, int k, Point p){
-    for (int i =0 ;i <n ;i++){
+    for (int i = 0 ;i < n ; i++){
         arr[i].distance = sqrt(((arr[i].x - p.x)*(arr[i].x - p.x)) + ((arr[i].y - p.y)*(arr[i].y - p.y)));
     }
 
-    for (int i=0;i<n-1;i++){
-        for (int j = i+1; j<n;j++){
+    for (int i = 0; i < n - 1; i++){
+        for (int j = i + 1; j < n; j++){
             if (arr[i].distance  > arr[j].distance){
                 swap(arr[i], arr[j]);
             }
@@ -23,7 +23,7 @@ int KNN(Point arr[], int n, int k, Point p){
     int dem1 = 0;
     int dem2 = 0;
 
-    for (int i=0;i<k;i++){
+    for (int i = 0; i < k; i++){
         if (arr[i].val == 0){
             dem1++;
         } else if (arr[i].val == 1) {
